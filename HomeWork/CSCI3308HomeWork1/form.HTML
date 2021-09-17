@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h1>Add New Article</h1>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputTitle">Article Title</label>
+      <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="TitleHelp" placeholder="Enter Title">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputName">Author Name</label>
+      <input type="text" class="form-control" id="exampleInputName" placeholder="name">
+    </div>
+  </form>
+  <div class="row">
+     <div class="col-sm">
+         <div class="form-group">
+           <label for="exampleFormControlFile1">Upload Files</label>
+           <input type="file" class="form-control-file" id="exampleFormControlFile1">
+         </div>
+     </div>
+     <div class="col-sm">
+       <div class="form-group">
+          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Pages</label>
+          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+     </div>
+   </div>
+   <div class="form-group">
+     <label for="exampleFormControlTextarea1">Article Text</label>
+     <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+   </div>
+   <div class="row">
+    <div class="col-sm">
+      <div class="form-group">
+        <h6>Select Tags</h6>
+        <!-- <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Select Tags</label> -->
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Python</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">C++</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Java</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+          <label class="form-check-label" for="inlineCheckbox4">Scala</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+          <label class="form-check-label" for="inlineCheckbox5">Perl</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <h6>Visiblity</h6>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Private
+          </label>
+        </div>
+    </div>
+   </div>
+   <div class="row">
+     <div class="col-sm">
+       <h6>Login to Finish Submitting</h6>
+       <div class="form-group">
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+       </div>
+     </div>
+     <div class="col-sm">
+       <div class="form-group">
+         <label for="exampleInputPassword1"></label>
+         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+       </div>
+     </div>
+   </div>
+   <div class="form-check form-check-inline">
+     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+     <label class="form-check-label" for="inlineCheckbox1">Remember me</label>
+   </div>
+   <div></div>
+   <button type="submit" class="btn btn-primary">Submit</button>
+</body>
+</html>
